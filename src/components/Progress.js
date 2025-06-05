@@ -11,9 +11,9 @@ export default function Progress({
       <p>
         Question <strong>{index} </strong> / {numQuestions}
       </p>
-      <p>
+      <h5>
         <strong>{points}</strong> / {maxPossiblePoints}
-      </p>
+      </h5>
     </header>
   );
 }
