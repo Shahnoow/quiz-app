@@ -1,5 +1,5 @@
 // import { type } from "@testing-library/user-event/dist/type";
-import { type } from "@testing-library/user-event/dist/type";
+
 import { useReducer } from "react";
 const initialStep = { count: 0, step: 1 };
 function reducer(state, action) {
