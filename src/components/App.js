@@ -11,6 +11,7 @@ import Progress from "./Progress_new";
 import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
+import questionsData from "../data/questions.json";
 
 // import { type } from "@testing-library/user-event/dist/type";
 
@@ -93,11 +94,8 @@ export default function App() {
     0
   );
 
-  useEffect(function () {
-    fetch("http://localhost:8000/questions")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
+  useEffect(() => {
+    dispatch({ type: "dataReceived", payload: questionsData.questions });
   }, []);
 
   return (
