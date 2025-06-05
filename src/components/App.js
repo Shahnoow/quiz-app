@@ -7,7 +7,7 @@ import Error from "./Error";
 import StarScreen from "./StarScreen";
 import Question from "./Question";
 import NextButton from "./NextButton";
-import Progress from "./Progress";
+import Progress from "./Progress_new";
 import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
